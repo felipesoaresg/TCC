@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width-device-width, initial-scale= 1.0">
+        <title>Food & Grill</title>
+        <!--CSS-->
+        <link rel="stylesheet" href="CSS/style.css" />
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="icon" type="image/png" href="IMG/Logo.png"/>
+        
+    </head>
+    <body class="site">
+      
+        <!--cabeçalho-->
+        <header> 
+            <!--menu-->
+            <nav class="menu">
+              <li class="menu-logo"> <a href="../pagInicial/index.html"> <img src="IMG/Logo.png" width="60px"> </a></li> 
+              <li class="menu-title"> <a href=""> <h3>Food & Grill</h3> </a> </li>
+              <li class="menu-item"> <a href="../pedido/index.html"> <img src="IMG/iconBandeja.png" width="55px"> </a> </li>
+            </nav>
+          </div>
+        </header>
+        
+        <!--Conteúdo-->
+        <article class="site-content">
+            
+
+            <div class="mainContainer">
+                <div class="row1">
+                    <h4>Pagamento</h4>
+                </div>
+
+                <div class="row2">
+
+                    <div class="itensR2">
+                        <h7>PAGUE AQUI</h7>
+                       <a href="pagOnline.html"> <div class="divider1"></div> </a> 
+                    </div>
+
+                    <div class="itensR2">
+                        <h7>PAGUE NO BALCÃO</h7>
+                        <a href="pagBalcao.html"> <div class="divider2"></div> </a>
+                    </div>
+
+                </div>
+
+                <div class="formas">
+                    <h6>Formas de Pagamentos</h6>
+                </div>
+                
+                <!---CARTAO DE CREDITO--->
+                <div class="check1">
+                    <label>Cartão de Crédito</label>
+                    <input class="bolinha1" type="radio" id="bt1" value="e" onclick="marcaDesmarca(this.id)">
+                </div>
+                <div id="a" class="inputs1" >
+            <label class="card-number">Número do Cartão</label><br>
+            <input type="text" class="input-card-number" maxlength="4" />
+            <input type="text" class="input-card-number" maxlength="4" />
+            <input type="text" class="input-card-number" maxlength="4" />
+            <input type="text" class="input-card-number" maxlength="4" /><br>
+            <div class="cvv">
+                <label for="card-cvv">CVV</label>
+                <input type="text" class="input-card-cvv" maxlength="3" />
+            <div class="selecionar">
+                <label> Validade</label>
+                <select class="opcoes">
+                <option></option>
+                    <option>Jan</option>
+                    <option>Feb</option>
+                    <option>Mar</option>
+                    <option>Abr</option>
+                    <option>Maio</option>
+                    <option>Jun</option>
+                    <option>Jul</option>
+                    <option>Ago</option>
+                    <option>Set</option>
+                    <option>Out</option>
+                    <option>Nov</option>
+                    <option>Dez</option>
+                </select>
+                <select class="opcoes">
+                <option></option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                </select>
+                </div>
+            </div>
+            <div class="card-holder">
+                <label>Titular do Cartão</label><br>
+                <input type="text" class="nome-titular" name="name">
+            </div>
+            <button type="button" class="botao">Salvar</button>
+            </div>
+                
+                <!---CARTAO DE DEBITO--->
+                <div class="check2">
+                    <label>Cartão de Débito</label>
+                    <input class="bolinha2" type="radio" id="bt2" value="f" onclick="marcaDesmarca(this.id)">
+                </div>
+                <div class="inputs2" id="b" >
+                    <label class="card-number">Número do Cartão</label><br>
+                    <input type="text" class="input-card-number" maxlength="4" />
+                    <input type="text" class="input-card-number" maxlength="4" />
+                    <input type="text" class="input-card-number" maxlength="4" />
+                    <input type="text" class="input-card-number" maxlength="4" /><br>
+                    <div class="cvv">
+                        <label for="card-cvv">CVV</label>
+                        <input type="text" class="input-card-cvv" maxlength="3" />
+                    <div class="selecionar">
+                        <label>Validade</label>
+                        <select class="opcoes">
+                        <option></option>
+                            <option>Jan</option>
+                            <option>Feb</option>
+                            <option>Mar</option>
+                            <option>Abr</option>
+                            <option>Maio</option>
+                            <option>Jun</option>
+                            <option>Jul</option>
+                            <option>Ago</option>
+                            <option>Set</option>
+                            <option>Out</option>
+                            <option>Nov</option>
+                            <option>Dez</option>
+                        </select>
+                        <select class="opcoes">
+                            <option></option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="card-holder">
+                            <label>Titular do Cartão</label><br>
+                            <input type="text" class="nome-titular" name="name">
+                        </div>
+                    <button type="button" class="botao">Salvar</button>
+                </div>
+
+                <!--PIX-->
+                <div class="check3">
+                    <label>PIX</label>
+                    <input class="bolinha3" type="radio" id="bt3" value="g" onclick="marcaDesmarca(this.id)">
+                </div>
+                <div id="c" class="inputs3" >
+                    <input class="pix" id="textpix" type="text" value="         05.113.150/0001-20" readonly=""></input><br>
+                    <button onclick="copiarTexto()" class="botao">Copiar</button>
+                </div>
+
+            <text>ㅤ</text> <!--NAO RETIRE-->
+            </div>
+            
+            <h2>TOTAL:</h2>
+
+            
+        <!--botões inferiores-->
+        <div class="row">
+            <a href="../pedido/index.html"> <button class="btn1"> Voltar</button> </a>
+
+            <a href="../envioPedido/loading.html"> <button class="btn2"> Realizar Pedido </button> </a>
+        </div>
+
+        </article>
+
+        <!--rodapé-->
+        <footer>
+            <nav class="menu-footer">
+              <li> <a href=""> <h3>Food & Grill</h3> </a> </li>
+              <li> <a href=""> <img src="IMG/instaIcon.png" class="footer-img"> </a> </li>
+            </nav>
+        </footer>
+
+
+
+        <!--JS-->
+        <script type="text/javascript" src="JS/java.js"></script>
+
+        <!--Bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </body>    
+</html>
+   
