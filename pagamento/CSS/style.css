@@ -1,0 +1,363 @@
+/*PARA SUMIR*/
+.inputs1, .inputs2, .inputs3 {
+    display: none;
+}
+
+body {
+    font-family: verdana;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*cabeçalho*/
+header {
+    display: flex;
+    overflow: auto;
+    height: 80px;
+    background-color: #F4B72D;
+    color: white;
+    overflow: hidden;
+}
+
+.menu {
+    list-style: none;
+    float:inline-start; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    padding:5px 10px; 
+}
+
+.menu-logo {
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 3px;
+    padding: 10px;
+}
+
+.menu-title {
+    align-items:baseline;
+}
+
+.menu-item {
+    top: 1px;
+    right: 10px;
+    padding: 15px;
+    position: absolute;
+}
+
+.site-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*CONTAINER*/
+.mainContainer {
+    background-color: rgba(255, 208, 0, 0.329);
+    border-radius: 17px;
+    width: 92%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.formas {
+    display: flex;
+    align-items:flex-start;
+    position: relative;
+    left: 15px;
+    color: black;
+    font-size: large;
+    padding-top: 20px;
+}
+
+/*LINHA*/
+.row1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin-top: 5px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: -4.8px;
+}
+
+.itensR2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    font-size: medium;
+
+}
+
+.itensR2 a {
+    text-decoration: none;
+}
+
+.divider1 {
+    border-bottom: 2px solid #F4B72D;
+    width: 20.9vh;
+}
+
+.divider2 {
+    border-bottom: 2px solid white;
+    width: 20.9vh;
+}
+
+/*PADRAO*/
+.input-card-number[type=text] {
+    display: inline-block;
+    color: white;
+    width: 50px;
+    height: 30px;
+    margin: 10px ;
+    background-color: #a028b8;
+    border-radius: 10px;
+    border-bottom: 2px solid #Ffff;
+    border: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input-card-cvv[type=text] {
+    display: inline-block;
+    color: white;
+    width: 50px;
+    height: 30px;
+    margin: 2px ;
+    background-color: #a028b8;
+    border-radius: 10px;
+    border-bottom: 2px solid #Ffff;
+    border: 0px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nome-titular[type=text] {
+    display: inline-block;
+    color: white;
+    width: 295px;
+    height: 30px;
+    margin: 2px ;
+    background-color: #a028b8;
+    border-radius: 10px;
+    border-bottom: 2px solid #Ffff;
+    border: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#textpix[type=text] {
+    display: inline-block;
+    color: white;
+    width: 295px;
+    height: 30px;
+    margin: 2px ;
+    background-color: #a028b8;
+    border-radius: 10px;
+    border-bottom: 2px solid #Ffff;
+    border: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.opcoes {
+    background-color: #A028D8;
+    color: white;
+    border-radius: 10px;
+}
+
+option {
+    background-color: white;
+    color: black;
+}
+
+.cvv{
+    text-align: left;
+    display: flex;
+    column-gap: 3px;
+}
+
+.botao {
+    top: 10px;
+    width: 280px;
+    height: 25px;
+    margin: 10px;
+    background-color: #a028b8;
+    color: #ffff;
+    border: 1px solid rgba(255, 255, 255, 0.49);
+    font-size:15px;
+    font-weight: bold;
+}
+
+/*CARTAO DE CREDITO*/
+.check1 {
+    background-color: rgba(255, 208, 0, 0.479);
+    margin: 0 auto 0 auto;
+    margin-top: 15px;
+    width: 90%;
+    padding: 1em;
+    color: black;
+    border-radius: 7.5px;
+    height: 55px;
+    box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.219);
+}
+
+
+.bolinha1 {
+    position: relative;
+    left: 50%;
+    top: 2px;
+    background-color: #21C51E;
+    
+}
+
+#a {
+    background-color: rgba(255, 208, 0, 0.514);
+    margin: 0 auto 0 auto;
+    width: 90%;
+    padding: 1em;
+}
+
+/*CARTAO DE DEBITO*/
+.check2 {
+    background-color: rgba(255, 208, 0, 0.479);
+    margin: 0 auto 0 auto;
+    margin-top: 15px;
+    width: 90%;
+    padding: 1em;
+    color: black;
+    border-radius: 7.5px;
+    height: 55px;
+    box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.219);
+}
+
+.bolinha2 {
+    position: relative;
+    left: 50%;
+    top: 2px
+}
+
+#b {
+    background-color: rgba(255, 208, 0, 0.514);
+    margin: 0 auto 0 auto;
+    width: 90%;
+    padding: 1em;
+}
+
+/*PIX*/
+.check3 {
+    background-color: rgba(255, 208, 0, 0.479);
+    margin: 0 auto 0 auto;
+    margin-top: 15px;
+    width: 90%;
+    padding: 1em;
+    color: black;
+    border-radius: 7.5px;
+    height: 55px;
+    box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.219);
+}
+
+.bolinha3 {
+    position: relative;
+    left: 85%;
+    top: 2px
+}
+
+#c {
+    background-color: rgba(255, 208, 0, 0.514);
+    margin: 0 auto 0 auto;
+    width: 90%;
+    padding: 1em;
+}
+
+/*TOTAL*/
+h2 {
+    padding-right: 52%;
+    padding-top: 9.5%;
+    font-weight: bolder;
+}
+
+
+/*botões inferiores*/
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 12%;
+}
+
+.row button {
+    background-color: #A028D8;
+    height: 35px;
+    border: 0px;
+    border-bottom: 3px black solid ;
+    box-shadow: 0 0 10px grey ;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn1 {
+    width: 100px;
+
+}
+
+.btn2 {
+    width: 180px;
+}
+
+
+/*rodapé*/
+footer {
+    background-color: #F4B72D;
+    color: white;
+    list-style: none;
+    overflow: hidden;
+    border-top: 1px solid ;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+
+/*links rodapé*/
+.menu-footer {
+    list-style: none;
+}
+
+.menu-footer li a{
+    float: left;
+    color: white;
+    text-decoration: none;
+    padding:5px 10px; 
+    display:block;
+}
+
+.footer-img {
+    top: 1px;
+    right: 10px;
+    padding: 15px;
+    position: absolute;
+    width: 60px;
+}
