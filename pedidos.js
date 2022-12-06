@@ -1,6 +1,5 @@
 const Sequelize = require('sequelize');
 const database = require('../db');
-const carrinho = require('./carrinho');
 const cliente = require('./cliente');
 
 const pedido = database.define( 'pedidos3', {
@@ -15,11 +14,7 @@ const pedido = database.define( 'pedidos3', {
         type: Sequelize.INTEGER,
         allowNull: false,
     },
-    carrinhoId: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-    },
-    pagamento: Sequelize.STRING(30),
+    pagamento: Sequelize.JSON,
 });
 
 pedido.hasOne(cliente, {
@@ -27,13 +22,6 @@ pedido.hasOne(cliente, {
 });
 cliente.belongsTo(pedido, {
     foreignKey:'idCliente', allowNull: false,
-});
-
-pedido.hasOne(carrinho,{
-    foreignKey:'carrinhoId', allowNull: false,
-});
-carrinho.belongsTo(pedido, {
-    foreignKey:'carrinhoId', allowNull: false,
 });
 
 module.exports = pedido;
