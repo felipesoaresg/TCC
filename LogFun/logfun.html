@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---css-->
+    <link rel="stylesheet" href="css/logfun.css">
+    <title>Food & Grill</title>
+    <link rel="icon" type="image/png" href="IMG/Logo.png" />
+</head>
+
+<body>
+
+    <article class="site">
+        <div class="img">
+            <img src="img/Logo.png"><br>
+        </div>
+
+        <div class="text1">
+            <text>BEM VINDO!</text>
+        </div>
+
+        <div class="text2">
+            <text>DIGITE SEUS DADOS</text>
+        </div><br>
+
+        <form action = "http://10.0.0.107:1313/gravar-cliente" class="inputs">
+            <input type="text" placeholder="ID:"  />
+            <BR>
+            <input type="password" placeholder="SENHA:" />
+            <br>
+            <a href="../PedidosFuncionarios/index.html"><input type="button" class="botao" value="AVANÇAR" onclick="enviarDados(); return false"/></a><br>
+            <a href="../LogFun/recsenha1.html" class="text1">ESQUECEU A SENHA?</a><br>
+            <a href="../LogFun/addfunci.html" class="text2">CADASTRE-SE</a>
+        </form><br>
+
+    </article>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

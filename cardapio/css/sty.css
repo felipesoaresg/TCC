@@ -1,0 +1,241 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*cabeçalho*/
+header {
+    display: flex;
+    overflow: hidden;
+    height: 80px;
+    background-color: #F4B72D;
+    color: white;
+}
+
+.menu {
+    list-style: none;
+    float:inline-start; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    padding:5px 10px; 
+}
+
+.menu-logo {
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 3px;
+    padding: 10px;
+}
+
+.menu-title {
+    align-items:baseline;
+}
+
+.menu-item {
+    top: 1px;
+    right: -5px;
+    padding: 15px;
+    position: absolute;
+}
+
+.site-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    width: 100% !important;
+}
+
+/*cardapio/menu*/
+.mainContainer {
+    display: flex;
+    min-width: 90%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 9%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 208, 0, 0.329);
+    border-radius: 8px;
+    min-width: 40vh !important;
+    max-width: 40vh;
+    height: 75px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.textosContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+    line-height: 2px;
+    padding-bottom: 8px;
+    width: 100% !important;
+}
+
+#desc {
+    font-size: small;
+    width: max-content;
+}
+.standardImg {
+    width: 30%;
+    height: 90%;
+}
+
+.standardImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*etiqueta de desconto/promoçâo*/
+/*.etiqueta {
+    display: flex;
+    background-color: #DC3636;
+    width: 40px;
+    height: 32px;
+    border-radius: 8px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.zindex2 {
+    position: relative;
+    z-index: 1;
+    padding-left: 18.8% !important;
+    padding-bottom: 17.8%;
+
+}*/
+
+/*contador*/
+.mainContador {
+    width: auto;
+    height: auto;
+}
+
+.zindex {
+    position: absolute;
+    z-index: 1;
+    padding-left: 65.8% !important;
+    padding-top: 15.8%;
+}
+
+
+.contador {
+    display: flex;
+    flex-direction: row;
+    background-color: #F4B72D;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 30px;
+    border-radius: 8px;
+    
+}
+
+button {
+    width: 23px;
+    height: 23px;
+    font-size: 20px;
+    align-items: center;
+    justify-items: center;
+    background-color: #F4B72D;
+    color: white;
+    right: 100%;
+    font-size: 80%;
+    border: 0;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#counting {
+    color: white;
+    font-weight: bold;   
+}
+
+/*botões inferiores*/
+.btn2-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding-top: 8%;
+}
+
+.row-item {
+    background-color: #A028D8;
+    border-radius: 50%;
+    width: 55px;
+    height: 50px;
+}
+
+.btn2-end {
+    background-color: #A028D8;
+    width: 100px;
+    height: 35px;
+    border-bottom: 2px black solid ;
+    box-shadow: 0 0 10px grey ;
+    border-radius: 8px;
+}
+
+.rowImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*rodapé*/
+footer {
+    background-color: #F4B72D;
+    color: white;
+    list-style: none;
+    overflow: auto;
+}
+
+/*links rodapé*/
+.menu-footer {
+    list-style: none;
+    float:inline-start;
+    border-radius: 5px;
+}
+
+.menu-footer li a{
+    float: left;
+    color: white;
+    text-decoration: none;
+    padding:5px 10px; 
+    display:block;
+}
+
+

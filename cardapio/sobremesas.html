@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS externo-->
+    <link rel="stylesheet" href="css/sty.css">
+    
+     <!--Bootstrap-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="icon" type="image/png" href="IMG/Logo.png"/>
+    <title>Food & Grill</title>
+</head>  
+
+<body class="site">
+
+    <!--cabeçalho-->
+    <header> 
+        <!--menu-->
+        <nav class="menu">
+          <li class="menu-logo"> <a href="../pagInicial/index.html"> <img src="IMG/Logo.png" width="60px"> </a></li> 
+          <li class="menu-title"> <a href=""> <h3>Food & Grill</h3> </a> </li>
+          <li class="menu-item"> <a href="../pedido/index.html"> <img src="IMG/iconBandeja.png" width="55px"> </a> </li>
+        </nav>
+      </div>
+    </header>
+
+    <!--conteúdo do site-->
+    <article class="site-content">
+        <!--itens do menu com grid -->
+        <div class="mainContainer">
+            <div class="container">
+
+                <div class="standardImg">
+                   <img src="img/sorvete.png" width="75px"> 
+                </div>
+                
+                <div class="textosContainer">
+                    <h5 id="nome"></h5>
+                        <p id="desc "></p><br>
+                        <p id="preco"></p>
+                </div>
+
+                <div class="mainContador zindex">
+                    <div class="contador ">            
+                        <button class = "counter" onclick="decrement()">-</button>
+                        <h3 id="counting">0</h3>
+                        <button  class = "counter" onclick="increment()">+</button>           
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+                    <!--<div class="zindex2">
+                        <div class="etiqueta">
+                            50%
+                        </div> **voltar pra etiqueta de promoção depois 
+                    </div-->
+
+    </article>
+
+            <!--botões inferiores-->
+            <div class="btn2-row">
+                <a href="hamburguer.html" ><div class="row-item"><i>  <img src="img/hamburguers.jpeg" class="rowImg"></div> </i></a>
+                <a href="bebidas.html" ><div class="row-item"><i>  <img src="img/bebidas.jpeg" class="rowImg"></div> </i></a>
+                <a href="petiscos.html" ><div class="row-item"><i>  <img src="img/petiscos.jpeg" class="rowImg"></div> </i></a>
+                <a href="../pedido/index.html"> <button class="btn2-end" > Finalizar </button> </a>
+            </div>
+        </br>
+        
+        <!--JS-->
+        <script src="jv/sobremesas.js"></script>
+
+        <!--Bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

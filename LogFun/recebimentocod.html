@@ -1,0 +1,42 @@
+
+  
+    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---css-->
+    <link rel="stylesheet" href="css/recebimentocod.css">
+    <title>Food & Grill</title>
+    <link rel="icon" type="image/png" href="IMG/Logo.png" />
+</head>
+
+<body>
+
+    <article class="site">
+        <div class="img">
+            <img src="img/Logo.png"><br>
+        </div>
+
+        <div class="text1">
+            <text>Digite seu código recebido via email</text>
+        </div>
+
+        <form action = "http://10.0.0.107:1313/gravar-cliente" class="inputs">
+            <BR>
+            <input id="codigo" type="number" placeholder="Código:" />
+            <br>
+            <br>
+            <a href="../LogFun/redefinirsenha.html"><input type="button" class="botao" value="AVANÇAR" onclick="enviarDados()"/></a>
+        </form><br>
+
+    </article>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+
+
+
+
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    padding: 80px;
+    font-size:larger;
+    font-family: verdana ;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+img{
+    width:160px;
+    object-fit: cover;
+    
+  }
+ 
+.botao {
+    padding:  10px;
+    width: auto;
+    height: 50px;
+    margin: 10px;
+    background-color: #F7B82B;
+    color: #ffff;
+    border: 1px solid #F7B82B;
+    border-radius: 9px;
+    box-shadow: 0 0 1em grey;
+    font-size:20px;
+    font-weight: bold;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.text1 {
+    padding-top: 2%;
+    color: #F7B82B;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text2 {
+    color: #932fac;
+    font-size: 110%;
+    font-weight: 300;
+    text-align: center;
+}
+
+.inputs {
+    padding-top: 25px;
+    text-align: center;
+}
+
+input[type=number] {
+    color: #ffff;
+    width: 32.5vh;
+    height: 30px;
+    padding: 10px;
+    margin: 15px ;
+    background-color: #a028d8;
+    border-radius: 22px;
+    border: 0px;
+    border-bottom: 2.5px solid #F7B82B;
+    font-size: 20px;
+    box-shadow: 0 0 1em grey;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: #ffff;
+}
+div .tudo{
+    background-color: rgb(27, 149, 13);
+    
+    align-items: center;
+}
+
+.text22 {
+    color: #F7B82B;
+    font-size: 110%;
+    font-weight: 300;
+    text-align: center;
+}
+
